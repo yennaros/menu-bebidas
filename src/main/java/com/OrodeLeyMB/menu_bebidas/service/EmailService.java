@@ -22,7 +22,11 @@ public class EmailService {
             mensaje.setSubject("Nuevo pedido recibido");
             mensaje.setText("Cliente: " + nombre + "\nBebida: " + bebida);
 
-            mailSender.send(mensaje);
+            try {
+                mailSender.send(mensaje);
+            } catch (Exception e) {
+                System.out.println("Error enviando correo, pero continúo...");
+            }
 
             System.out.println("CORREO ENVIADO CORRECTAMENTE ✅");
 
