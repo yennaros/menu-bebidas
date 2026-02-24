@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menú</title>
+</head>
+<body>
+
+<h1>Haz tu pedido</h1>
+
+<form action="/pedido" method="post">
+    Nombre: <input type="text" name="nombreCliente" required>
+    <br><br>
+
+    <select name="bebida">
+        <option value="Café">Café</option>
+        <option value="Té">Té</option>
+        <option value="Agua">Agua</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
